@@ -8,6 +8,12 @@ const PATHS = {
   signIn() {
     return "/sign-in";
   },
+  organization(id?: string) {
+    return `/organization/${id ? id : ":id"}`;
+  },
+  selectOrganization() {
+    return "/select-org";
+  },
 };
 
 export default PATHS;
